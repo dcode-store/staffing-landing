@@ -116,17 +116,17 @@ const PopupWidget = () => {
                     <form onSubmit={handleSubmit(onSubmit)} noValidate>
                       <input
                         type="hidden"
-                        value="YOUR_ACCESS_KEY_HERE"
+                        value="d62781d6-8546-4c75-ad74-42ac0c1027e9"
                         {...register("apikey")}
                       />
                       <input
                         type="hidden"
-                        value={`${userName} sent a message from Nextly`}
+                        value={`${userName} sent a message from DailyStaffing`}
                         {...register("subject")}
                       />
                       <input
                         type="hidden"
-                        value="Nextly Template"
+                        value="DailyStaffing Landing"
                         {...register("from_name")}
                       />
                       <input
@@ -149,11 +149,10 @@ const PopupWidget = () => {
                             required: "Full name is required",
                             maxLength: 80,
                           })}
-                          className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
-                            errors.name
-                              ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
-                          }`}
+                          className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${errors.name
+                            ? "border-red-600 focus:border-red-600 ring-red-100"
+                            : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                            }`}
                         />
                         {errors.name && (
                           <div className="mt-1 text-sm text-red-400 invalid-feedback">
@@ -178,12 +177,11 @@ const PopupWidget = () => {
                               message: "Please enter a valid email",
                             },
                           })}
-                          placeholder="you@company.com"
-                          className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
-                            errors.email
-                              ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
-                          }`}
+                          placeholder="you@example.com"
+                          className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${errors.email
+                            ? "border-red-600 focus:border-red-600 ring-red-100"
+                            : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                            }`}
                         />
 
                         {errors.email && (
@@ -207,11 +205,10 @@ const PopupWidget = () => {
                             required: "Enter your Message",
                           })}
                           placeholder="Your Message"
-                          className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
-                            errors.message
-                              ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
-                          }`}
+                          className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${errors.message
+                            ? "border-red-600 focus:border-red-600 ring-red-100"
+                            : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                            }`}
                           required></textarea>
                         {errors.message && (
                           <div className="mt-1 text-sm text-red-400 invalid-feedback">
@@ -246,20 +243,6 @@ const PopupWidget = () => {
                           )}
                         </button>
                       </div>
-                      <p
-                        className="text-xs text-center text-gray-400"
-                        id="result">
-                        <span>
-                          Powered by{" "}
-                          <a
-                            href="https://Web3Forms.com"
-                            className="text-gray-600"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            Web3Forms
-                          </a>
-                        </span>
-                      </p>
                     </form>
                   )}
 

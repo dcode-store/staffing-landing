@@ -15,9 +15,8 @@ const Faq = () => {
                   <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200">
                     <span>{item.question}</span>
                     <ChevronUpIcon
-                      className={`${
-                        open ? "transform rotate-180" : ""
-                      } w-5 h-5 text-indigo-500`}
+                      className={`${open ? "transform rotate-180" : ""
+                        } w-5 h-5 text-indigo-500`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
@@ -35,22 +34,24 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
-  },
-  {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
-  },
-  {
-    question: "What is your refund policy? ",
+    question: "How do I get started with the daily-staffing platform?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Getting started is easy! Simply sign up for an account, customize your settings, and start posting shifts.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "What types of businesses can benefit from this platform?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Our platform is designed to help a variety of businesses, including restaurants, retail stores, healthcare facilities, and more.",
+  },
+  {
+    question: "Can I integrate this platform with my existing systems?",
+    answer:
+      "Yes, our platform offers seamless integration with popular HR and scheduling software.",
+  },
+  {
+    question: "Is technical support available for users?",
+    answer:
+      "Absolutely! Our team provides dedicated technical support to help you get the most out of our platform.",
   },
 ];
 
