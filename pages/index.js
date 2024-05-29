@@ -17,12 +17,22 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>DailyStaffing - Your Staffing Solution</title>
+        <title>DailyStaffing | Simplify Your Staffing Process</title>
         <meta
           name="description"
-          content="A platform for workers to offer availability and businesses to create jobs/shifts and choose from job matching from a pool of workers."
+          content="DailyStaffing is a comprehensive platform designed to simplify your staffing process. Connect with available workers, streamline job postings, and manage scheduling efficiently."
         />
+        <meta name="keywords" content="staffing, daily staffing, job postings, workforce management, staff scheduling, staffing platform, find workers, staffing solutions" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="DailyStaffing | Simplify Your Staffing Process" />
+        <meta property="og:description" content="DailyStaffing is a comprehensive platform designed to simplify your staffing process. Connect with available workers, streamline job postings, and manage scheduling efficiently." />
+        <meta property="og:image" content="https://dcode.store/img/logo.png" />
+        <meta property="og:url" content="https://dcode.store" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="DailyStaffing | Simplify Your Staffing Process" />
+        <meta name="twitter:description" content="DailyStaffing is a comprehensive platform designed to simplify your staffing process. Connect with available workers, streamline job postings, and manage scheduling efficiently." />
+        <meta name="twitter:image" content="https://dcode.store/img/logo.png" />
       </Head>
 
       <Navbar />
